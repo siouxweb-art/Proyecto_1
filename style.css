@@ -18,6 +18,11 @@ h1{
 
 h2{
     font-family: 'Arsenal SC', sans-serif;
+    font-weight: bold;
+    color: var(--font-color);
+    font-size: 2.5em;
+
+
 }
 
 h3{
@@ -34,6 +39,7 @@ font-family: 'Raleway', sans-serif;
     --spacing: 20px;
     --border-ppal: 2px solid #060606;
     --background: #f4f4f4;
+    --primary-font: 'Arsenal SC', sans-serif;
     
 }
 
@@ -95,6 +101,7 @@ nav ul > li > a{
 /*main*/
 main{
     width: 90%;
+    height: auto;
     min-height: 80vh;
     background-color: blue;
     display: grid;
@@ -122,6 +129,11 @@ grid-column: 1/3;
 grid-row: 5/11;
 
 }
+aside > h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
 aside > ul{
     list-style: none;
     line-height: 50px;
@@ -141,6 +153,58 @@ aside > ul > li > a{
     grid-column: 3/9;
     grid-row: 5/11;
 }
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4%;
+}
+
+/*productos*/
+.gallery > div{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    
+}
+
+.gallery > div > img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+
+}
+
+.gallery > div > h3 >a{
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.comprar{
+    width: 70%;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: var(--primary-font);
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    color: var(--background);
+    background-color: var(--font-color);
+    border-radius: 50px;
+
+}
+
+.comprar:hover{
+    transition: 1s;
+    background-color: #383838;
+    box-shadow: 5px 5px 10px 1px #000000;
+
+}
+
+
 
 /*pie de página*/
 footer{
